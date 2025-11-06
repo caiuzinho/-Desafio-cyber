@@ -1,0 +1,7 @@
+
+Este projeto tem finalidade didática: demonstrar, de forma controlada, o fluxo de um ransomware simplificado em Python.
+Geração de chave, descoberta de arquivos, cifragem e criação de uma nota de resgate. O propósito é entender como a cifragem de arquivos funciona, 
+quais sinais geram detecção e como projetar medidas de defesa e recuperação.
+
+Aviso importante: este script é um exemplo educacional que demonstra conceitos de cifragem de arquivos. NÃO execute em máquinas de produção, computadores de outras pessoas ou sem autorização explícita.
+Rode apenas em máquinas virtuais isoladas (snapshot antes e depois dos testes).
