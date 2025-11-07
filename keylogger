@@ -1,0 +1,32 @@
+1. Keylogger Local (Registro em log.txt)
+
+Este módulo simula um Keylogger que armazena todas as teclas digitadas em um arquivo de texto local.
+
+1.1. Análise do Código
+
+O script utiliza a função on_press da pynput para capturar eventos de teclado.
+Teclas Normais: Caracteres (letras, números, símbolos) são escritos diretamente no arquivo log.txt.
+Teclas Especiais:
+Espaço e Enter são substituídos por quebras de linha (\n) para melhor legibilidade.
+Tab é substituído por um caractere de tabulação (\t).
+Backspace é substituído por um espaço ( ).
+ESC é marcado com [ESC].
+Teclas de Controle: Teclas como Shift, Ctrl, e Alt são explicitamente ignoradas, tornando o log mais limpo e focado no conteúdo digitado.
+2. Keylogger com Exfiltração por E-mail
+Este módulo demonstra como um Keylogger pode exfiltrar os dados capturados enviando-os para um endereço de e-mail do atacante em intervalos regulares.
+2.1. Análise do Código
+Captura em Memória: As teclas são capturadas e armazenadas em uma variável global (log) em vez de serem escritas imediatamente em um arquivo.
+Exfiltração Agendada: A função enviar_email() é agendada para ser executada a cada 60 segundos usando threading.Timer.
+Protocolo SMTP: Utiliza a biblioteca padrão smtplib para conectar-se a um servidor SMTP (ex: smtp.gmail.com), autenticar-se e enviar o conteúdo do log.
+Limpeza: Após o envio bem-sucedido, a variável log é limpa para evitar o reenvio de dados antigos.
+Furtividade (Simulada): A lógica de agendamento e a ausência de registro em disco (apenas em memória até o envio) são características de malware que buscam evitar a detecção por ferramentas de monitoramento de disco.
+2.2. Configuração de E-mail
+ATENÇÃO: Para que este script funcione, você deve substituir as variáveis de configuração de e-mail por credenciais válidas.
+EMAIL_ORIGEM: O e-mail que será usado para enviar a mensagem.
+EMAIL_DESTINO: O e-mail que receberá o log (simulando o e-mail do atacante).
+SENHA_EMAIL: A senha ou, preferencialmente, uma Senha de Aplicativo gerada pelo provedor de e-mail (altamente recomendado para segurança).
+
+
+
+
+
