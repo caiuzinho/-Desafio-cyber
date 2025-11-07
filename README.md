@@ -62,6 +62,15 @@ O Keylogger só pode capturar eventos dentro do ambiente isolado, sem acesso a o
 O Back  ajuda  na proteção em caso de  encriptamento dos dados,  mantendo back na pratioca 3-2-1 sendo um backonline, um offline e outro em  uma localidade totalmente diferente  
 
 
+Conscientização do Usuário: 
+A falha humana é o vetor de ataque mais comum. A educação é crucial:
+Phishing e Engenharia Social: O usuário deve ser treinado para identificar e-mails e mensagens fraudulentas que tentam induzi-lo a baixar anexos maliciosos (que contêm o malware) ou clicar em links perigosos.
+Princípio do Menor Privilégio: Usuários devem operar com as permissões mínimas necessárias. A execução de um malware com privilégios limitados restringe o dano que ele pode causar (e.g., o Ransomware não conseguiria criptografar arquivos de sistema).
+Atualizações: Manter o sistema operacional e todos os softwares atualizados para corrigir vulnerabilidades exploradas por malware.
+
+
+
+
 
 
 
