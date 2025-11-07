@@ -2,7 +2,8 @@
 
 Introdução
 
-Este projeto prático, desenvolvido em um ambiente controlado e com fins estritamente educacionais, visa simular o comportamento de dois tipos de malware comuns: Ransomware e Keylogger. A implementação em Python permite uma análise detalhada dos mecanismos de ataque, o que é fundamental para a compreensão e desenvolvimento de estratégias de defesa eficazes.
+Este projeto prático, desenvolvido em um ambiente controlado e com fins estritamente educacionais, visa simular o comportamento de dois tipos de malware comuns: Ransomware e Keylogger. 
+A implementação em Python permite uma análise detalhada dos mecanismos de ataque, o que é fundamental para a compreensão e desenvolvimento de estratégias de defesa eficazes.
 
 O código-fonte completo para as simulações está disponível nos diretórios ransomware/ e keylogger/.
 
@@ -16,8 +17,7 @@ O Ransomware é um tipo de malware que criptografa os dados da vítima e exige u
 
 1.2. Fluxo de Ataque (Simulado)
 
-1.
-Geração da Chave: O script gera uma chave Fernet única e a salvando uma chave
+1. Geração da Chave: O script gera uma chave Fernet única e a salvando uma chave
 
 2. Análise Técnica: Keylogger Simulado
 
